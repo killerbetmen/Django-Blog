@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content%}
+    <h1>All blogs</h1>
+
+    {% if all_pubs %}
+    <ul>
+
+        {% for a in all_pubs %}
+        <li>
+            <a href="{% url 'web:publication' a.id %}">{{a.publication_title}}</a>({{a.publication_date}})
+        </li>
+        {% endfor %}
+
+    </ul>
+    {% else %}
+        <p>There are no publications in the library.</p>
+    {% endif %}
+{% endblock %}

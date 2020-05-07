@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content%}
+    <h1>All bloggers</h1>
+
+    {% if all_users %}
+    <ul>
+
+        {% for b in all_users %}
+        <li>
+            <a href="{% url 'web:user' b.id %}">{{b.username}}</a>
+        </li>
+        {% endfor %}
+
+    </ul>
+    {% else %}
+        <p>We are don't have users :(</p>
+    {% endif %}
+{% endblock %}

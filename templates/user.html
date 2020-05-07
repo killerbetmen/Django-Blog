@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ user.username }}</h1>
+    <h3>Bio</h3>
+    <p><strong>First name: </strong>{{ user.first_name }}</p>
+    <p><strong>Last name: </strong>{{ user.last_name }}</p>
+    <p><strong>Mail: </strong>{{ user.email }}</p>
+    <p><strong>Date joined:<br></strong>{{ user.date_joined }}</p>
+    <h3>My blogs list:</h3>
+
+    {% if list_user_pubs %}
+    <ul>
+
+        {% for d in list_user_pubs %}
+        <li>
+            <a href="{% url 'web:publication' d.id %}">{{d.publication_title}}</a>
+        </li>
+        {% endfor %}
+
+    </ul>
+    {% else %}
+        <p>This user doesn't have any publication.</p>
+    {% endif %}
+
+{% endblock %}

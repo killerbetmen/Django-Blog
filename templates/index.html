@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Blog Home</h1>
+
+  <p>Welcome to <em>Blog</em>, a very basic Django website developed</p>
+
+<h2>Dynamic content</h2>
+
+  <p>The blog has the following record counts:</p>
+  <ul>
+    <li><strong>Users:</strong> {{ num_users }}</li>
+    <li><strong>Blogs:</strong> {{ num_pubs }}</li>
+  </ul>
+
+{% endblock %}
