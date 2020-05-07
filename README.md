@@ -8,7 +8,7 @@ all blogs, and detail for bloggers and blogs (including comments for each blog).
 
 * Click on `Fork`.
 
-* Go to your fork and clone the project to your local machine.
+* Go to your fork and `clone` the project to your local machine.
 
 * Install the requirements `pip install -r requirements.txt`.
 
