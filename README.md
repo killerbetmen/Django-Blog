@@ -6,14 +6,14 @@ all blogs, and detail for bloggers and blogs (including comments for each blog).
 
 **To setup the project on your local machine:**
 
-Click on Fork.
+* Click on `Fork`.
 
-Go to your fork and clone the project to your local machine.
+* Go to your fork and clone the project to your local machine.
 
-Install the requirements pip install -r requirements.txt.
+* Install the requirements `pip install -r requirements.txt`.
 
-Apply the migrations python manage.py migrate.
+* Apply the migrations `python manage.py migrate`.
 
-Finally, run the development server python manage.py runserver.
+* Finally, run the development server `python manage.py runserver`.
 
-The project will be available at 127.0.0.1:8000.
+* The project will be available at 127.0.0.1:8000.
